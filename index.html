@@ -15,7 +15,7 @@
         (async () => {
             const isMobile = window.matchMedia("only screen and (max-width: 600px)").matches;
 
-            let particleQuantity = isMobile ? 30 : 100;
+            let particleQuantity = isMobile ? 30 : 120;
 
             await tsParticles.load({
                 id: "tsparticles",
@@ -73,7 +73,7 @@
 
 
     <header>
-        <h1>Hi, I'm <b>Rami</b>. I'm a <b>Computer Science</b> graduate from <b>George Mason University</b>.</h1>
+        <p>Hi, I'm <b>Rami</b>. I'm a <b>Computer Science</b> graduate from <b>George Mason University</b>.</p>
         <nav> 
             <ul>
                 <li><a href="#about">About</a></li>
@@ -94,5 +94,11 @@
     </main>
     <footer id="contact"></footer>
 
+    <div class="button-container">
+        <button id="github" onclick="window.location.href= 'https:github.com/Strutio'">
+            GitHub
+            <img id="logo" src="stylesheet/github-mark.png" alt="GitHub Logo">
+        </button>
+    </div>
 </body>
 </html>
