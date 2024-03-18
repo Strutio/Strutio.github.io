@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
-h1 {
+p {
     margin: auto;
     margin-top: 130px;
     width: 17em;
@@ -11,15 +11,28 @@ h1 {
     
 }
 
+
 @media screen and (max-width: 600px) {
-    h1 {
+    p {
         font-size: 25px;
+        width: auto;
+    }
+    
+    nav {
+        width: auto;
     }
 
-}
+    .button-container {
+        float: none;
+        margin: 0 auto;
+    }
 
-.bold {
-    font-weight: bold;
+    #github {
+        padding: 10px 15px;
+        font-size: 15px;
+        border-radius: 15px;
+    }
+
 }
 
 #tsparticles {
@@ -65,4 +78,32 @@ nav ul li a {
 
 nav ul li a:hover {
     background-color: #111;
+}
+
+
+.button-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#github {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 30px;
+    font-size: 25px;
+    border-radius: 20px;
+    border: none;
+    background-color: white;
+    
+}
+
+#github:hover {
+    background-color: rgb(216, 216, 216);
+}
+
+#logo {
+    margin-left: 5px; /* Adjust margin-left to create space between text and logo */
+    width: 30px; /* Adjust the width of the logo as needed */
+    margin-bottom: 2.2px;
 }
