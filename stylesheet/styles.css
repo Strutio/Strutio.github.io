@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
-p {
+.intro {
     margin: auto;
     margin-top: 130px;
     width: 17em;
@@ -9,6 +9,10 @@ p {
     font-family: 'Montserrat';
     color: white;
     
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 
@@ -33,12 +37,18 @@ p {
         border-radius: 15px;
     }
 
+    .project-box {
+        width: 30%; /* Set width to 90% of the viewport width */
+        padding: 10px; /* Reduce padding for smaller screens */
+        margin: 10px auto; /* Adjust margin for smaller screens */
+    }
+
 }
 
 #tsparticles {
     width: 100%;       /* Make it cover the entire width of the screen */
     height: 500px;     /* Set a desired height */
-    position: fixed; /* Or fixed, depending on your layout needs */
+    position: absolute; /* Or fixed, depending on your layout needs */
     top: 0;
     left: 0;
     z-index: -1;
@@ -106,4 +116,54 @@ nav ul li a:hover {
     margin-left: 5px; /* Adjust margin-left to create space between text and logo */
     width: 30px; /* Adjust the width of the logo as needed */
     margin-bottom: 2.2px;
+}
+
+
+.project-box {
+    width: 1200px; /* Adjust the width as needed */
+    margin: 20px auto; /* Center the project box horizontally */
+    padding: 30px; /* Add padding for spacing */
+    background-color: #f0f0f0; /* Set background color */
+    border-radius: 20px; /* Add rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
+}
+
+.project-box:first-child {
+    margin-top: 200px; /* Increase top margin for the first project box */
+}
+
+.project-box h1 {
+    margin-top: 0; /* Remove default margin */
+    font-family: 'Montserrat';
+    font-size: 45px;
+    text-align: center;
+}
+
+.project-box p {
+    margin-bottom: 10px; /* Add spacing between description and image */
+    color: black;
+    font-family: 'Montserrat';
+    font-size: 30px;
+    width: 55%; /* Take 70% of the container width */
+    float: left; /* Float the paragraph to the left */
+}
+
+.project-box img {
+    max-width: 45%; /* Take 30% of the container width */
+    float: right; /* Float the image to the right */
+}
+.project-box:after {
+    content: "";
+    display: table;
+    clear: both; /* Clear floats after the content */
+}
+
+
+.skills-box {
+    width: 1200px; /* Adjust the width as needed */
+    margin: 300px auto; /* Center the project box horizontally */
+    padding: 30px; /* Add padding for spacing */
+    background-color: #f0f0f0; /* Set background color */
+    border-radius: 20px; /* Add rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
 }
