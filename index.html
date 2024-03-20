@@ -7,6 +7,9 @@
 </head>   
 
 <body>
+
+    <script src="static/frontend.js"></script>
+
     
     <div id="tsparticles"></div>
     
@@ -72,33 +75,65 @@
     </script>
 
 
-    <header>
-        <p>Hi, I'm <b>Rami</b>. I'm a <b>Computer Science</b> graduate from <b>George Mason University</b>.</p>
-        <nav> 
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-
     <main>
-        <section id="about"></section>
-        <section id="projects"></section>
-        <section id="skills"></section>
-        <section id="education"></section>
+        <section id="about">
+            <header>
+                <p class="intro">Hi, I'm <b>Rami</b>. I'm a <b>Computer Science</b> graduate from <b>George Mason University</b>.</p>
+                <nav> 
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <div class="button-container">
+                <button id="github" onclick="window.location.href= 'https://github.com/Strutio'">
+                    GitHub
+                    <img id="logo" src="stylesheet/github-mark.png" alt="GitHub Logo">
+                </button>
+            </div>
+        
+
+        </section>
+        <section id="projects">
+            <div class="project-box">
+                <h1>Spotify Playlist Generator</h1>
+                <p class="project-description">A python webpage which is capable of generating playlists based on a user-specified artist, to be stored on the users account. Made using the Spotipy api, JavaScript, HTML, CSS, and Flask.</p>
+                <img src="stylesheet/SPG Website.png" alt="Project Image 1">
+            </div>
+
+            <div class="project-box">
+                <h1>Recipe Bot</h1>
+                <p class="project-description">A discord bot that is capable of providing users with recipes based on ingredients on hand or through queries. Made using Python, Discord.py, BeautifulSoup4 and Selenium.</p>
+                <img src="path_to_image" alt="Project Image">
+            </div>
+            
+            <div class="project-box">
+                <h1>Another Project Title</h1>
+                <p class="project-description">Description of another project.</p>
+                <img src="path_to_image" alt="Project Image">
+            </div>
+
+            <div class="project-box">
+                <h1>Another Project Title</h1>
+                <p class="project-description">Description of another project.</p>
+                <img src="path_to_image" alt="Project Image">
+            </div>
+        </section>
+        <section id="skills">
+            <div class="skills-box">
+            <p>List of skills here.</p>
+            </div>
+        </section>
+        <section id="education">
+            <p>List education here.</p>
+        </section>
     </main>
     <footer id="contact"></footer>
 
-    <div class="button-container">
-        <button id="github" onclick="window.location.href= 'https://github.com/Strutio'">
-            GitHub
-            <img id="logo" src="stylesheet/github-mark.png" alt="GitHub Logo">
-        </button>
-    </div>
 </body>
 </html>
