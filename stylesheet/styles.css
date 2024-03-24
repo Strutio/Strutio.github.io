@@ -118,10 +118,17 @@ nav ul li a:hover {
     margin-bottom: 2.2px;
 }
 
+h1, h2 {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Montserrat';
+}
+
+
 
 .project-box {
     width: 1200px; /* Adjust the width as needed */
-    margin: 20px auto; /* Center the project box horizontally */
+    margin: 100px auto; /* Center the project box horizontally */
     padding: 30px; /* Add padding for spacing */
     background-color: #f0f0f0; /* Set background color */
     border-radius: 20px; /* Add rounded corners */
@@ -144,7 +151,7 @@ nav ul li a:hover {
     color: black;
     font-family: 'Montserrat';
     font-size: 30px;
-    width: 55%; /* Take 70% of the container width */
+    width: 53%; /* Take 70% of the container width */
     float: left; /* Float the paragraph to the left */
 }
 
@@ -160,10 +167,48 @@ nav ul li a:hover {
 
 
 .skills-box {
-    width: 1200px; /* Adjust the width as needed */
-    margin: 300px auto; /* Center the project box horizontally */
-    padding: 30px; /* Add padding for spacing */
-    background-color: #f0f0f0; /* Set background color */
-    border-radius: 20px; /* Add rounded corners */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
+    display: flex;
+    flex-wrap: wrap; /* Allow skills to wrap to the next line */
+    justify-content: center; /* Center skills horizontally */
+    width: 900px;
+    margin: 100px auto;
+    padding: 0; /* Set padding to 0 */
+}
+
+.skill {
+    text-align: center;
+    margin: 0; /* Set margin to 0 */
+    flex: 1 0 30%; /* Set the flex basis to ensure 4 skills on the first line */
+    max-width: 25%; /* Set maximum width to ensure 4 skills on the first line */
+    transition: transform 0.3s ease; /* Add a transition for smooth scaling */
+}
+
+.skill:nth-child(4n + 1) {
+    margin-bottom: 50px; /* Add margin-bottom to every 4th skill (the start of a new row) */
+}
+
+.skill:hover {
+    transform: scale(1.1); /* Scale the skill container on hover */
+}
+
+.skill img {
+    display: block; /* Ensure the image is displayed as a block element */
+    margin: 0 auto; /* Center the image horizontally */
+    width: auto; /* Allow the width to adjust based on the image */
+    max-height: 100px; /* Set a maximum height for the image */
+}
+
+.skill p {
+    margin-top: 10px; /* Adjust spacing between image and text */
+    margin-bottom: 10px; /* Add bottom margin */
+    font-size: 20px;
+    font-family: 'Montserrat';
+    transition: transform 0.3s ease; /* Add a transition for smooth scaling */
+}
+
+.skill:hover p {
+    transform: scale(1.1); /* Scale the text on hover */
+}
+#projects {
+    padding-top: 300px; /* Adjust the value as needed */
 }
