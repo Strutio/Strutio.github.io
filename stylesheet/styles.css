@@ -166,6 +166,9 @@ h1, h2, h3 {
     clear: both; /* Clear floats after the content */
 }
 
+.skills-heading {
+    padding-top: 50px; /* Adjust the padding as needed to push the heading down */
+}
 
 .skills-box {
     display: flex;
@@ -250,4 +253,58 @@ h1, h2, h3 {
 
 .education-content ul li {
     margin-bottom: 5px;
+}
+
+
+#contact {
+    padding: 20px; /* Reduce padding for spacing */
+    text-align: center; /* Center-align text */
+    margin-top: 100px; /* Add top margin to separate from previous section */
+    margin-bottom: 100px; /* Add bottom margin to separate from next section */
+    font-family: 'Montserrat'
+}
+
+.contact-form {
+    margin-bottom: 20px; /* Add bottom margin for spacing */
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 80%; /* Make inputs and textarea 80% of the container width */
+    max-width: 400px; /* Limit maximum width */
+    padding: 10px; /* Add padding for spacing */
+    margin: 10px auto; /* Center-align inputs and textarea */
+    border: 1px solid #ccc; /* Add border */
+    border-radius: 5px; /* Add border radius */
+    box-sizing: border-box; /* Include padding and border in width calculation */
+    display: block; /* Display inputs and textarea as block elements */
+}
+
+.contact-form textarea {
+    height: 150px; /* Set textarea height */
+}
+
+.contact-form input[type="submit"] {
+    background-color: #007bff; /* Set button background color */
+    color: white; /* Set button text color */
+    border: none; /* Remove button border */
+    padding: 10px 20px; /* Add padding for button */
+    border-radius: 5px; /* Add border radius */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.contact-info {
+    font-size: 18px; /* Set font size for contact information */
+    color: #555; /* Set color for contact information */
+    margin-bottom: 20px; /* Add bottom margin for spacing */
+}
+
+.contact-info a {
+    color: #007bff; /* Set link color */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.contact-info a:hover {
+    text-decoration: underline; /* Add underline on hover */
 }
