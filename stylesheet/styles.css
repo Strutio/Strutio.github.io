@@ -15,36 +15,6 @@ html {
     scroll-behavior: smooth;
 }
 
-
-@media screen and (max-width: 600px) {
-    p {
-        font-size: 25px;
-        width: auto;
-    }
-    
-    nav {
-        width: auto;
-    }
-
-    .button-container {
-        float: none;
-        margin: 0 auto;
-    }
-
-    #github {
-        padding: 10px 15px;
-        font-size: 15px;
-        border-radius: 15px;
-    }
-
-    .project-box {
-        width: 30%; /* Set width to 90% of the viewport width */
-        padding: 10px; /* Reduce padding for smaller screens */
-        margin: 10px auto; /* Adjust margin for smaller screens */
-    }
-
-}
-
 #tsparticles {
     width: 100%;       /* Make it cover the entire width of the screen */
     height: 500px;     /* Set a desired height */
@@ -125,8 +95,6 @@ h1, h2, h3 {
     font-family: 'Montserrat';
 }
 
-
-
 .project-box {
     width: 1200px; /* Adjust the width as needed */
     margin: 100px auto; /* Center the project box horizontally */
@@ -134,10 +102,11 @@ h1, h2, h3 {
     background-color: #f0f0f0; /* Set background color */
     border-radius: 20px; /* Add rounded corners */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
+    margin-bottom: 150px;
 }
 
 .project-box:first-child {
-    margin-top: 200px; /* Increase top margin for the first project box */
+    margin-top: 300px; /* Increase top margin for the first project box */
 }
 
 .project-box h1 {
@@ -307,4 +276,91 @@ h1, h2, h3 {
 
 .contact-info a:hover {
     text-decoration: underline; /* Add underline on hover */
+}
+
+
+@media screen and (max-width: 600px) {
+    p {
+        font-size: 25px;
+        width: auto;
+    }
+    
+    .intro {
+        font-size: 25px;
+        width: auto;
+    }
+
+    nav {
+        width: auto;
+    }
+
+    #projects h1 {
+        margin-top: -20px;
+    }
+
+    .project-box {
+        width: 90%; /* Adjust width to fit smaller screens */
+        margin: 30px auto; /* Adjust margin for smaller screens */
+        padding: 30px; /* Reduce padding for smaller screens */
+    }
+
+    .project-box img {
+        max-width: 100%; /* Make image responsive */
+        margin-bottom: 10px; /* Add margin to create spacing between image and paragraph */
+        float: right; /* Float the image to the right */
+        margin-left: 10px; /* Add margin to create space between image and paragraph */
+    }
+
+    .project-box h1 {
+        font-size: 24px; /* Reduce font size for project titles */
+    }
+
+    .project-box p {
+        font-size: 15px; /* Keep font size for project descriptions */
+        margin-bottom: 10px; /* Adjust margin to add spacing between description and image */
+        width: 100%; /* Set width to 100% to occupy full width */
+    }
+
+    /* Skills Section */
+    .skills-box {
+        width: 90%; /* Adjust width to fit smaller screens */
+        margin: 30px auto; /* Adjust margin for smaller screens */
+    }
+
+    .skill {
+        max-width: calc(50% - 20px); /* Adjust maximum width for skills */
+        margin-right: 20px; /* Add margin between skills */
+        margin-bottom: 20px; /* Add bottom margin for skills */
+    }
+
+    /* Education Section */
+    .education-heading {
+        padding-top: 30px;
+    }
+
+    .education-box {
+        width: 90%; /* Adjust width to fit smaller screens */
+        margin: 30px auto; /* Adjust margin for smaller screens */
+        padding: 15px; /* Reduce padding for smaller screens */
+    }
+
+    .education-box img {
+        width: 100px; /* Reduce image width for education box */
+        margin-right: 15px; /* Add margin to the right of the image */
+        float: left; /* Float the image to the left */
+    }
+
+    .education-content p {
+        font-size: 16px; /* Reduce font size for education content */
+    }
+
+    /* Contact Section */
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form textarea,
+    .contact-form input[type="submit"] {
+        width: 100%; /* Make input fields and button full width */
+        max-width: none; /* Remove max-width */
+    }
+
 }
