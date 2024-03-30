@@ -353,10 +353,12 @@ h1, h2, h3 {
     }
 
     .skill {
-        max-width: calc(50% - 20px); /* Adjust maximum width for skills */
-        margin-right: 20px; /* Add margin between skills */
-        margin-bottom: 20px; /* Add bottom margin for skills */
-    }
+    text-align: center; /* Center the content horizontally */
+    margin: 0 auto; /* Center the element within its container */
+    flex: 1 0 50%; /* Adjust the flex basis to ensure 2 skills on each line */
+    max-width: calc(50% - 20px); /* Adjust maximum width for skills */
+    margin-bottom: 20px; /* Add bottom margin for skills */
+}
 
     /* Education Section */
     .education-heading {
