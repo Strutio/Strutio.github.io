@@ -182,6 +182,7 @@ h1, h2, h3 {
 .skill:hover p {
     transform: scale(1.1); /* Scale the text on hover */
 }
+
 #projects {
     padding-top: 300px; /* Adjust the value as needed */
 }
@@ -197,6 +198,10 @@ h1, h2, h3 {
     align-items: center;
     font-family: 'Montserrat';
     height: 200px;
+}
+
+.education-heading {
+    padding-top: 20px;
 }
 
 .education-box img {
